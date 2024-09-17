@@ -1,0 +1,38 @@
+Shoot rock
+A classic space shooter game written in C++ using the raylib library.
+
+How to play
+The player can control the spaceship with left and right key. Player can shoot only when the shoot has been charged. 
+Player has to press Z for 1 second to charge the shoot and when they unpress the button they can shoot the enmy.
+The player has to collect te coins to get points. The first coin value is 50 and after that every consecutive point value increases by 10. It resets for every new rock.
+
+Setup
+Install raylib library: Follow the instructions on the raylib website to install the raylib library on your system.
+Install zip file: Install this zip to your local machine and unzip it.
+Compile and run: Use your preferred C++ compiler to compile and run the game.
+
+
+Code Structure
+TThe code for the game is organized into several files, each with a specific purpose:
+
+InitGame.cpp: This file is responsible for initializing the game scene, setting the starting position of the spaceship, defining the window size of the map, 
+initializing the score-related variables, setting the starting state of the missile, creating 8 missiles with random positions and speeds, and storing them 
+in a vector.
+
+DrawGame.cpp: This file is responsible for drawing various aspects of the game. It draws the main screen, game over screen, background texture, player, shoot, 
+enemies, coins, scores, combo, a charging bar for the weapon, and a message to indicate when the weapon is fully charged.
+
+Close.cpp: This file is responsible for freeing up the memory used by the textures and deleting the data stored in the vectors.
+
+Level.cpp: This file contains the logic that runs while the game is in progress. It controls the movement of the player, the firing of the shoot, the movement of 
+the coins, the scoring system, the combo system, the rock movement, and collision detection between the objects in the game.
+
+LoadResources.cpp: This file is responsible for loading all the textures and sounds used in the game.
+
+
+Limitations
+Currently, the game only supports a single level. These features may be added in future updates.
+
+
+Acknowledgements
+This game was developed using the raylib library.
